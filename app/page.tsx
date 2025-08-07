@@ -12,10 +12,9 @@ export default function Home() {
             Welcome to My Portfolio
           </h1>
           <p className="text-xl md:text-2xl text-slate-600 dark:text-slate-400 max-w-4xl mx-auto leading-relaxed">
-            I am a software engineer with a passion for building web applications and mobile apps.
-            This website aims to show off my skills and projects. Much of my recent work was done in a corporate setting,
-            as a result it is not always possible to show off my current work. Through this website I will be actively posting
-            skills I am actively acquiring along with past projects done for passion or as part of my academic career. 
+          I’m a software and systems engineer with a background in computer networking and a focus on software development. I’ve contributed to high-impact engineering projects in manufacturing environments, developing tools and automation in languages like C#, Java, and Bash. My professional experience includes working with cross-functional teams, maintaining complex enterprise systems, and developing business analytics dashboards and internal platforms.
+
+While much of my recent work at Starplus Energy and BorgWarner was developed within corporate settings and can't be publicly shared, this website showcases my personal and academic projects, as well as the skills I'm currently sharpening. Whether it’s building full-stack web apps with Next.js and Tailwind or scripting automation in Linux environments, I’m always seeking to solve practical problems through technology.
           </p>
         </div>
         
@@ -197,7 +196,6 @@ export default function Home() {
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <p>TEST11</p>
           {allPosts.map((post) => (
             <article key={post._id} className="group">
               <Link href={post.slug} className="block">
@@ -246,7 +244,7 @@ export default function Home() {
       <section className="text-center space-y-6 py-12 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-950 dark:to-purple-950 rounded-2xl">
         <h2 className="text-3xl font-bold">Ready to Dive Deeper?</h2>
         <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-          TEST12
+          TEST11
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link 
