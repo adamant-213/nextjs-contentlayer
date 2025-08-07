@@ -12,9 +12,10 @@ export default function Home() {
             Welcome to My Portfolio
           </h1>
           <p className="text-xl md:text-2xl text-slate-600 dark:text-slate-400 max-w-4xl mx-auto leading-relaxed">
-          Im a software and systems engineer with a background in computer networking and a focus on software development. Ive contributed to high-impact engineering projects in manufacturing environments, developing tools and automation in languages like C#, Java, and Bash. My professional experience includes working with cross-functional teams, maintaining complex enterprise systems, and developing business analytics dashboards and internal platforms.
-
-While much of my recent work at Starplus Energy and BorgWarner was developed within corporate settings and cant be publicly shared, this website showcases my personal and academic projects, as well as the skills Im currently sharpening. Whether it’s building full-stack web apps with Next.js and Tailwind or scripting automation in Linux environments, I’m always seeking to solve practical problems through technology.
+          Im a software and systems engineer with a background in computer networking and a focus on software development. Ive contributed to high-impact engineering projects in manufacturing environments, developing tools and automation in languages like C#, Java, and Bash. 
+          My professional experience includes working with cross-functional teams, maintaining complex enterprise systems, and developing business analytics dashboards and internal platforms.
+          While much of my recent work at Starplus Energy and BorgWarner was developed within corporate settings and cant be publicly shared, this website showcases my personal and academic projects, as well as the skills Im currently sharpening. 
+          Whether its building full-stack web apps with Next.js and Tailwind or scripting automation in Linux environments, Im always seeking to solve practical problems through technology.
           </p>
         </div>
         
@@ -231,7 +232,7 @@ While much of my recent work at Starplus Energy and BorgWarner was developed wit
         {allPosts.length > 0 && (
           <div className="text-center">
             <Link 
-              href="/posts" 
+              href="/Articles" 
               className="inline-flex items-center gap-2 bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 hover:bg-slate-800 dark:hover:bg-slate-200 px-6 py-3 rounded-lg font-medium transition-colors"
             >
               View All Articles
