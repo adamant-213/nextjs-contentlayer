@@ -232,7 +232,7 @@ export default function Home() {
         {allPosts.length > 0 && (
           <div className="text-center">
             <Link 
-              href="/Articles" 
+              href="/articles" 
               className="inline-flex items-center gap-2 bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 hover:bg-slate-800 dark:hover:bg-slate-200 px-6 py-3 rounded-lg font-medium transition-colors"
             >
               View All Articles
