@@ -188,7 +188,7 @@ export default function Home() {
               <h3 className="text-xl font-semibold">Code Projects</h3>
             </div>
             <p className="text-slate-600 dark:text-slate-400 mb-4">
-              This link will take you to my code page where I have posted various projects I&apos;'ve worked on over the years
+              This link will take you to my code page where I have posted various projects I&apos;ve worked on over the years
             </p>
             <Link href="/codelinks" className="text-purple-600 hover:text-purple-700 dark:text-purple-400 dark:hover:text-purple-300 font-medium">
               Browse Code →
