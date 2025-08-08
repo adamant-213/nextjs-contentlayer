@@ -11,12 +11,15 @@ export default function Home() {
           <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
             Welcome to My Portfolio
           </h1>
-          <p className="text-xl md:text-2xl text-slate-600 dark:text-slate-400 max-w-4xl mx-auto leading-relaxed">
-          Im a software and systems engineer with a background in computer networking and a focus on software development. Ive contributed to high-impact engineering projects in manufacturing environments, developing tools and automation in languages like C#, Java, and Bash. 
+          <p className="text-l md:text-xl text-slate-600 dark:text-slate-400 max-w-4xl mx-auto leading-relaxed">
+          Hello, I&apos;m Adam Berndt,
+          <br />
+          I&apos;m a software and systems engineer with a background in computer networking and a focus on software development. I&apos;ve contributed to high-impact engineering projects in manufacturing environments, developing tools and automation in languages like C#, Java, and Bash. 
           My professional experience includes working with cross-functional teams, maintaining complex enterprise systems, and developing business analytics dashboards and internal platforms.
-          While much of my recent work at Starplus Energy and BorgWarner was developed within corporate settings and cant be publicly shared, this website showcases my personal and academic projects, as well as the skills Im currently sharpening. 
-          Whether its building full-stack web apps with Next.js and Tailwind or scripting automation in Linux environments, Im always seeking to solve practical problems through technology.
-          </p>
+          <br />
+          While much of my recent work at Starplus Energy and BorgWarner was developed within corporate settings and can&apos;t be publicly shared, this website showcases my personal and academic projects, as well as the skills I&apos;m currently sharpening. 
+          Whether it&apos;s building full-stack web apps with Next.js and Tailwind or scripting automation in Linux environments, I&apos;m always seeking to solve practical problems through technology.
+        </p>
         </div>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -42,11 +45,15 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-8">
             <div className="space-y-4">
               <h3 className="text-xl font-semibold text-blue-600 dark:text-blue-400">
-                🚀 Academic Development
+                🚀 Resume & Transcripts
               </h3>
               <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
-                TEST
+                This section introduces me and also offers previews of my resume and transcript
               </p>
+              <Link href="/about/#info-section" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-medium">
+                Browse About Me →
+              </Link> 
+
             </div>
             
             <div className="space-y-4">
@@ -54,8 +61,11 @@ export default function Home() {
                 🎨 Documentation
               </h3>
               <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
-                TEST2
+                This section shows documentation I have written throughout my academic career
               </p>
+              <Link href="/documentation" className="text-purple-600 hover:text-purple-700 dark:text-purple-400 dark:hover:text-purple-300 font-medium">
+                Browse Documentation →
+              </Link> 
             </div>
             
             <div className="space-y-4">
@@ -161,9 +171,9 @@ export default function Home() {
               <h3 className="text-xl font-semibold">Technical Guides</h3>
             </div>
             <p className="text-slate-600 dark:text-slate-400 mb-4">
-              TEST8
+              This link will take you to my documentation page where I have posted guides written throughout my academic career
             </p>
-            <Link href="#blog-section" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-medium">
+            <Link href="/documentation/#network-section" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-medium">
               Browse Guides →
             </Link>
           </div>
@@ -175,13 +185,13 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold">Code Examples</h3>
+              <h3 className="text-xl font-semibold">Code Projects</h3>
             </div>
             <p className="text-slate-600 dark:text-slate-400 mb-4">
-              TEST9
+              This link will take you to my code page where I have posted various projects I've worked on over the years
             </p>
-            <Link href="#blog-section" className="text-purple-600 hover:text-purple-700 dark:text-purple-400 dark:hover:text-purple-300 font-medium">
-              View Examples →
+            <Link href="/codelinks" className="text-purple-600 hover:text-purple-700 dark:text-purple-400 dark:hover:text-purple-300 font-medium">
+              Browse Code →
             </Link>
           </div>
         </div>
@@ -192,7 +202,7 @@ export default function Home() {
         <div className="text-center space-y-4">
           <h2 className="text-3xl font-bold">Latest Articles</h2>
           <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-            TEST10
+            Most recent articles will be posted here
           </p>
         </div>
         
@@ -249,7 +259,7 @@ export default function Home() {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link 
-            href="/about" 
+            href="/about/#socials-section" 
             className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition-colors"
           >
             Get in Touch
