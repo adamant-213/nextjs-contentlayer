@@ -255,7 +255,7 @@ export default function Home() {
       <section className="text-center space-y-6 py-12 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-950 dark:to-purple-950 rounded-2xl">
         <h2 className="text-3xl font-bold">Ready to Dive Deeper?</h2>
         <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-          TEST11
+          Reach out to me on GitHub, LinkedIn, or email me direct!
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link 
