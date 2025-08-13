@@ -1,3 +1,41 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Common container for each project section */
+.project-container {
+  @apply border rounded-lg overflow-hidden; /* Lighter border */
+}
+
+/* Common header row styling */
+.project-header {
+  @apply 
+    grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 
+    p-0 font-semibold border-b;
+}
+
+/* Common cell styling for header cells */
+.project-header-cell {
+  @apply border border-gray-300 p-2;
+}
+
+/* Common content row styling */
+.project-row {
+  @apply
+    grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 
+    p-0 hover:bg-opacity-40;
+}
+
+/* Common cell styling for content cells */
+.project-cell {
+  @apply border p-4; 
+}
+
+.project-button {
+    @apply inline-block font-semibold px-4 py-2 rounded shadow-md;
+  }
+  
+  .project-cell-center {
+    @apply flex justify-center items-center;
+  }
+  
