@@ -4,39 +4,84 @@ import Image from "next/image"
 
 export default function Home() {
   return (
-    <div className="space-y-16">
+    <div className="space-y-2">
       {/* Hero Section */}
       <section className="text-center space-y-8 py-12">
-        <div className="space-y-6">
-          <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
-            Welcome to My Portfolio
-          </h1>
-          <p className="text-l md:text-xl text-slate-600 dark:text-slate-400 max-w-4xl mx-auto leading-relaxed">
-          Hello, I&apos;m Adam Berndt,
-          <br />
-          I&apos;m a software and systems engineer with a background in computer networking and a focus on software development. I&apos;ve contributed to high-impact engineering projects in manufacturing environments, developing tools and automation in languages like C#, Java, and Bash. 
-          My professional experience includes working with cross-functional teams, maintaining complex enterprise systems, and developing business analytics dashboards and internal platforms.
-          <br />
-          While much of my recent work at Starplus Energy and BorgWarner was developed within corporate settings and can&apos;t be publicly shared, this website showcases my personal and academic projects, as well as the skills I&apos;m currently sharpening. 
-          Whether it&apos;s building full-stack web apps with Next.js and Tailwind or scripting automation in Linux environments, I&apos;m always seeking to solve practical problems through technology.
+  <div className="space-y-6">
+    <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
+      Welcome to My Portfolio
+    </h1>
+
+    {/* Profile + Intro */}
+    <div className="flex flex-col md:flex-row items-center md:items-start md:justify-center gap-8 max-w-5xl mx-auto">
+      {/* Profile Picture + Social Buttons */}
+      <div className="flex-shrink-0 flex flex-col items-center gap-4">
+        <img
+          src="profile.jpg"
+          alt="Profile Icon"
+          className="w-40 h-40 rounded-full object-cover border-4 border-slate-300 dark:border-slate-700"
+        />
+        <p>
+          Adam Berndt
         </p>
-        </div>
-        
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Link 
-            href="#blog-section" 
-            className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-medium transition-colors text-lg"
+        <div className="flex gap-4">
+        <a
+            href="https://www.linkedin.com/in/adam-berndt-6778a4211"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-blue-700 hover:bg-blue-800 text-white px-5 py-2 rounded-lg font-medium transition-colors"
           >
-            Explore Articles
-          </Link>
-          <Link 
-            href="/about" 
-            className="inline-flex items-center gap-2 border-2 border-slate-300 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800 px-8 py-4 rounded-lg font-medium transition-colors text-lg"
+            LinkedIn
+          </a>          
+          <a
+            href="https://github.com/adamant-213"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-gray-800 hover:bg-gray-900 text-white px-5 py-2 rounded-lg font-medium transition-colors"
           >
-            Learn More About Me
-          </Link>
+            GitHub
+          </a>
+
         </div>
-      </section>
+      </div>
+
+      {/* Paragraph */}
+      <div className="text-left md:text-left space-y-4 max-w-3xl">
+        <p className="text-l md:text-xl text-slate-600 dark:text-slate-400 leading-relaxed">
+          Hello, I&apos;m Adam Berndt, <br /> I&apos;m a software and systems engineer with a background in
+          computer networking, information technology, with a focus on software development. I&apos;ve contributed to high-impact
+          engineering projects in manufacturing environments; developing tools and automation in languages
+          like C#, Java, and Bash. My professional experience includes working with cross-functional teams,
+          maintaining complex enterprise systems, and developing business analytics dashboards and internal
+          systems.
+          <br />
+          While much of my recent work at Starplus Energy and BorgWarner was developed within corporate
+          settings and can&apos;t be publicly shared, this website showcases my personal and academic
+          projects, as well as the skills I&apos;m currently sharpening. Whether it&apos;s building
+          full-stack web apps with Next.js and Tailwind or scripting automation in Linux environments,
+          I&apos;m always seeking to solve practical problems through technology.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  {/* Main Action Buttons */}
+  <div className="flex flex-col sm:flex-row gap-4 justify-center">
+    <Link
+      href="#blog-section"
+      className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-medium transition-colors text-lg"
+    >
+      Explore Articles
+    </Link>
+    <Link
+      href="/about"
+      className="inline-flex items-center gap-2 border-2 border-slate-300 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800 px-8 py-4 rounded-lg font-medium transition-colors text-lg"
+    >
+      Learn More About Me
+    </Link>
+  </div>
+</section>
+
 
       {/* Exposition Section */}
       <section className="max-w-4xl mx-auto space-y-8">
@@ -255,7 +300,7 @@ export default function Home() {
       <section className="text-center space-y-6 py-12 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-950 dark:to-purple-950 rounded-2xl">
         <h2 className="text-3xl font-bold">Ready to Dive Deeper?</h2>
         <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-          Reach out to me on GitHub, LinkedIn, or email me direct!
+          Reach out to me on GitHub, LinkedIn, or email me direct!pn
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link 
