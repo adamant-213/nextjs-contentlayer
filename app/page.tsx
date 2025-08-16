@@ -4,9 +4,9 @@ import Image from "next/image"
 
 export default function Home() {
   return (
-    <div className="space-y-2">
+    <div className="space-y-12">
       {/* Hero Section */}
-      <section className="text-center space-y-8 py-12">
+      <section className="text-center space-y-8 py-8">
   <div className="space-y-6">
     <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
       Welcome to My Portfolio
@@ -29,7 +29,7 @@ export default function Home() {
             href="https://www.linkedin.com/in/adam-berndt-6778a4211"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-blue-700 hover:bg-blue-800 text-white px-5 py-2 rounded-lg font-medium transition-colors"
+            className="btn-primary"
           >
             LinkedIn
           </a>          
@@ -37,7 +37,7 @@ export default function Home() {
             href="https://github.com/adamant-213"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-gray-800 hover:bg-gray-900 text-white px-5 py-2 rounded-lg font-medium transition-colors"
+            className="btn-secondary"
           >
             GitHub
           </a>
@@ -67,32 +67,27 @@ export default function Home() {
 
   {/* Main Action Buttons */}
   <div className="flex flex-col sm:flex-row gap-4 justify-center">
-    <Link
-      href="#blog-section"
-      className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-medium transition-colors text-lg"
-    >
+    <Link href="#blog-section" className="btn-primary text-lg">
       Explore Articles
     </Link>
-    <Link
-      href="/about"
-      className="inline-flex items-center gap-2 border-2 border-slate-300 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800 px-8 py-4 rounded-lg font-medium transition-colors text-lg"
-    >
+    <Link href="/about" className="btn-secondary text-lg">
       Learn More About Me
     </Link>
   </div>
 </section>
 
 
-      {/* Exposition Section */}
-      <section className="max-w-4xl mx-auto space-y-8">
-        <div className="prose dark:prose-invert prose-lg max-w-none">
-          <h2 className="text-3xl font-bold text-center mb-8">What You Will Find Here</h2>
+
+{/* Exposition Section */}
+<section className="max-w-4xl mx-auto space-y-8">
+  <div className="prose dark:prose-invert prose-lg max-w-none">
+    <h2 className="section-title mb-8">What You Will Find Here</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="space-y-4">
               <h3 className="text-xl font-semibold text-blue-600 dark:text-blue-400">
                 🚀 Resume & Transcripts
               </h3>
-              <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
+              <p className="paragraph">
                 This section introduces me and also offers previews of my resume and transcript
               </p>
               <Link href="/about/#info-section" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-medium">
@@ -105,7 +100,7 @@ export default function Home() {
               <h3 className="text-xl font-semibold text-purple-600 dark:text-purple-400">
                 🎨 Documentation
               </h3>
-              <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
+              <p className="paragraph">
                 This section shows documentation I have written throughout my academic career
               </p>
               <Link href="/documentation" className="text-purple-600 hover:text-purple-700 dark:text-purple-400 dark:hover:text-purple-300 font-medium">
@@ -117,7 +112,7 @@ export default function Home() {
               <h3 className="text-xl font-semibold text-green-600 dark:text-green-400">
                 🔧 Photo Dumps
               </h3>
-              <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
+              <p className="paragraph">
                 TEST3
               </p>
             </div>
@@ -126,7 +121,7 @@ export default function Home() {
               <h3 className="text-xl font-semibold text-orange-600 dark:text-orange-400">
                 💡 Employment Experience
               </h3>
-              <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
+              <p className="paragraph">
                 TEST4
               </p>
             </div>
@@ -140,7 +135,7 @@ export default function Home() {
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="group cursor-pointer">
-            <div className="relative overflow-hidden rounded-lg shadow-lg group-hover:shadow-xl transition-shadow">
+            <div className="feature-image">
               <Image 
                 src="/blog-post-1.jpg" 
                 alt="Modern web development" 
@@ -150,7 +145,7 @@ export default function Home() {
                 loading="lazy"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div className="feature-overlay">
                 <div className="absolute bottom-4 left-4 text-white">
                   <h3 className="font-semibold">Web Development</h3>
                   <p className="text-sm opacity-90">TEST5</p>
@@ -160,7 +155,7 @@ export default function Home() {
           </div>
           
           <div className="group cursor-pointer">
-            <div className="relative overflow-hidden rounded-lg shadow-lg group-hover:shadow-xl transition-shadow">
+            <div className="feature-image">
               <Image 
                 src="/blog-post-2.jpg" 
                 alt="Design systems" 
@@ -170,7 +165,7 @@ export default function Home() {
                 loading="lazy"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div className="feature-overlay">
                 <div className="absolute bottom-4 left-4 text-white">
                   <h3 className="font-semibold">Design Systems</h3>
                   <p className="text-sm opacity-90">TEST6</p>
@@ -180,7 +175,7 @@ export default function Home() {
           </div>
           
           <div className="group cursor-pointer">
-            <div className="relative overflow-hidden rounded-lg shadow-lg group-hover:shadow-xl transition-shadow">
+            <div className="feature-image">
               <Image 
                 src="/blog-post-3.jpg" 
                 alt="Performance optimization" 
@@ -190,7 +185,7 @@ export default function Home() {
                 loading="lazy"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div className="feature-overlay">
                 <div className="absolute bottom-4 left-4 text-white">
                   <h3 className="font-semibold">Performance</h3>
                   <p className="text-sm opacity-90">TEST7</p>
@@ -255,12 +250,12 @@ export default function Home() {
           {allPosts.map((post) => (
             <article key={post._id} className="group">
               <Link href={post.slug} className="block">
-                <div className="p-6 rounded-lg border border-slate-200 dark:border-slate-800 hover:border-blue-300 dark:hover:border-blue-700 transition-all duration-300 hover:shadow-lg">
+                <div className="card">
                   <h3 className="text-xl font-semibold group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors mb-3">
                     {post.title}
                   </h3>
                   {post.description && (
-                    <p className="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">
+                    <p className="paragraph mb-4">
                       {post.description}
                     </p>
                   )}
@@ -305,13 +300,13 @@ export default function Home() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link 
             href="/about/#socials-section" 
-            className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition-colors"
+            className="btn-primary"
           >
             Get in Touch
           </Link>
           <Link 
             href="#blog-section" 
-            className="inline-flex items-center gap-2 border border-slate-300 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800 px-6 py-3 rounded-lg font-medium transition-colors"
+            className="btn-secondary"
           >
             Explore More
           </Link>
