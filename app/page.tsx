@@ -7,81 +7,74 @@ export default function Home() {
     <div className="space-y-12">
       {/* Hero Section */}
       <section className="text-center space-y-8 py-8">
-  <div className="space-y-6">
-    <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
-      Welcome to My Portfolio
-    </h1>
+        <div className="space-y-6">
+          <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
+            Welcome to My Portfolio
+          </h1>
 
-    {/* Profile + Intro */}
-    <div className="flex flex-col md:flex-row items-center md:items-start md:justify-center gap-8 max-w-5xl mx-auto">
-      {/* Profile Picture + Social Buttons */}
-      <div className="flex-shrink-0 flex flex-col items-center gap-4">
-        <img
-          src="profile.jpg"
-          alt="Profile Icon"
-          className="w-40 h-40 rounded-full object-cover border-4 border-slate-300 dark:border-slate-700"
-        />
-        <p>
-          Adam Berndt
-        </p>
-        <div className="flex gap-4">
-        <a
-            href="https://www.linkedin.com/in/adam-berndt-6778a4211"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-primary"
-          >
-            LinkedIn
-          </a>          
-          <a
-            href="https://github.com/adamant-213"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-secondary"
-          >
-            GitHub
-          </a>
+          {/* Profile + Intro */}
+          <div className="flex flex-col md:flex-row items-center md:items-start md:justify-center gap-8 max-w-5xl mx-auto">
+            {/* Profile Picture + Social Buttons */}
+            <div className="flex-shrink-0 flex flex-col items-center gap-4">
+              <img
+                src="profile.jpg"
+                alt="Profile Icon"
+                className="w-40 h-40 rounded-full object-cover border-4 border-slate-300 dark:border-slate-700"
+              />
+              <p>
+                Adam Berndt
+              </p>
+              <div className="flex gap-4">
+                <a
+                  href="https://www.linkedin.com/in/adam-berndt-6778a4211"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-primary"
+                >
+                  LinkedIn
+                </a>
+                <a
+                  href="https://github.com/adamant-213"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-secondary"
+                >
+                  GitHub
+                </a>
 
+              </div>
+            </div>
+
+            {/* Paragraph */}
+            <div className="text-left md:text-left space-y-4 max-w-3xl">
+            <p className="paragraph py-12">
+            &quot;I&rsquo;m Adam Berndt, a software and systems engineer with a background in networking, IT, and software development.
+             I&rsquo;ve worked on automation, enterprise systems, and analytics in manufacturing, with experience in C#, Java, and Bash.
+              While much of my recent work is proprietary, this site showcases my personal and academic projects, 
+              from full-stack web apps to Linux automation, reflecting my focus on solving practical problems with technology.&quot;
+            </p>
+
+            </div>
+          </div>
         </div>
-      </div>
 
-      {/* Paragraph */}
-      <div className="text-left md:text-left space-y-4 max-w-3xl">
-        <p className="text-l md:text-xl text-slate-600 dark:text-slate-400 leading-relaxed">
-          Hello, I&apos;m Adam Berndt, <br /> I&apos;m a software and systems engineer with a background in
-          computer networking, information technology, with a focus on software development. I&apos;ve contributed to high-impact
-          engineering projects in manufacturing environments; developing tools and automation in languages
-          like C#, Java, and Bash. My professional experience includes working with cross-functional teams,
-          maintaining complex enterprise systems, and developing business analytics dashboards and internal
-          systems.
-          <br />
-          While much of my recent work at Starplus Energy and BorgWarner was developed within corporate
-          settings and can&apos;t be publicly shared, this website showcases my personal and academic
-          projects, as well as the skills I&apos;m currently sharpening. Whether it&apos;s building
-          full-stack web apps with Next.js and Tailwind or scripting automation in Linux environments,
-          I&apos;m always seeking to solve practical problems through technology.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  {/* Main Action Buttons */}
-  <div className="flex flex-col sm:flex-row gap-4 justify-center">
-    <Link href="#blog-section" className="btn-primary text-lg">
-      Explore Articles
-    </Link>
-    <Link href="/about" className="btn-secondary text-lg">
-      Learn More About Me
-    </Link>
-  </div>
-</section>
+        {/* Main Action Buttons */}
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <Link href="#blog-section" className="btn-primary text-lg">
+            Explore Articles
+          </Link>
+          <Link href="/about" className="btn-secondary text-lg">
+            Learn More About Me
+          </Link>
+        </div>
+      </section>
 
 
 
-{/* Exposition Section */}
-<section className="max-w-4xl mx-auto space-y-8">
-  <div className="prose dark:prose-invert prose-lg max-w-none">
-    <h2 className="section-title mb-8">What You Will Find Here</h2>
+      {/* Exposition Section */}
+      <section className="max-w-4xl mx-auto space-y-8">
+        <div className="prose dark:prose-invert prose-lg max-w-none">
+          <h2 className="section-title mb-8">What You Will Find Here</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="space-y-4">
               <h3 className="text-xl font-semibold text-blue-600 dark:text-blue-400">
@@ -92,10 +85,10 @@ export default function Home() {
               </p>
               <Link href="/about/#info-section" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-medium">
                 Browse About Me →
-              </Link> 
+              </Link>
 
             </div>
-            
+
             <div className="space-y-4">
               <h3 className="text-xl font-semibold text-purple-600 dark:text-purple-400">
                 🎨 Documentation
@@ -105,9 +98,9 @@ export default function Home() {
               </p>
               <Link href="/documentation" className="text-purple-600 hover:text-purple-700 dark:text-purple-400 dark:hover:text-purple-300 font-medium">
                 Browse Documentation →
-              </Link> 
+              </Link>
             </div>
-            
+
             <div className="space-y-4">
               <h3 className="text-xl font-semibold text-green-600 dark:text-green-400">
                 🔧 Photo Dumps
@@ -116,7 +109,7 @@ export default function Home() {
                 TEST3
               </p>
             </div>
-            
+
             <div className="space-y-4">
               <h3 className="text-xl font-semibold text-orange-600 dark:text-orange-400">
                 💡 Employment Experience
@@ -132,14 +125,14 @@ export default function Home() {
       {/* Featured Images Section */}
       <section className="max-w-6xl mx-auto space-y-8">
         <h2 className="text-3xl font-bold text-center">Featured Work</h2>
-        
+
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="group cursor-pointer">
             <div className="feature-image">
-              <Image 
-                src="/blog-post-1.jpg" 
-                alt="Modern web development" 
-                width={400} 
+              <Image
+                src="/blog-post-1.jpg"
+                alt="Modern web development"
+                width={400}
                 height={250}
                 className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                 loading="lazy"
@@ -153,13 +146,13 @@ export default function Home() {
               </div>
             </div>
           </div>
-          
+
           <div className="group cursor-pointer">
             <div className="feature-image">
-              <Image 
-                src="/blog-post-2.jpg" 
-                alt="Design systems" 
-                width={400} 
+              <Image
+                src="/blog-post-2.jpg"
+                alt="Design systems"
+                width={400}
                 height={250}
                 className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                 loading="lazy"
@@ -173,13 +166,13 @@ export default function Home() {
               </div>
             </div>
           </div>
-          
+
           <div className="group cursor-pointer">
             <div className="feature-image">
-              <Image 
-                src="/blog-post-3.jpg" 
-                alt="Performance optimization" 
-                width={400} 
+              <Image
+                src="/blog-post-3.jpg"
+                alt="Performance optimization"
+                width={400}
                 height={250}
                 className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                 loading="lazy"
@@ -199,7 +192,7 @@ export default function Home() {
       {/* Documents & Resources Section */}
       <section className="max-w-4xl mx-auto space-y-8">
         <h2 className="text-3xl font-bold text-center">Resources & Documents</h2>
-        
+
         <div className="grid md:grid-cols-2 gap-8">
           <div className="p-6 rounded-lg border border-slate-200 dark:border-slate-800 hover:border-blue-300 dark:hover:border-blue-700 transition-colors">
             <div className="flex items-center gap-3 mb-4">
@@ -217,8 +210,8 @@ export default function Home() {
               Browse Guides →
             </Link>
           </div>
-          
-          <div className="p-6 rounded-lg border border-slate-200 dark:border-slate-800 hover:border-purple-300 dark:hover:border-purple-700 transition-colors">
+
+          <div className="p-8 rounded-lg border border-slate-200 dark:border-slate-800 hover:border-purple-300 dark:hover:border-purple-700 transition-colors">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-10 h-10 bg-purple-100 dark:bg-purple-900 rounded-lg flex items-center justify-center">
                 <svg className="w-5 h-5 text-purple-600 dark:text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -245,7 +238,7 @@ export default function Home() {
             Most recent articles will be posted here
           </p>
         </div>
-        
+
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {allPosts.map((post) => (
             <article key={post._id} className="group">
@@ -278,12 +271,12 @@ export default function Home() {
             </article>
           ))}
         </div>
-        
+
         {allPosts.length > 0 && (
           <div className="text-center">
-            <Link 
-              href="/articles" 
-              className="inline-flex items-center gap-2 bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 hover:bg-slate-800 dark:hover:bg-slate-200 px-6 py-3 rounded-lg font-medium transition-colors"
+            <Link
+              href="/articles"
+              className="btn-dark"
             >
               View All Articles
             </Link>
@@ -292,20 +285,20 @@ export default function Home() {
       </section>
 
       {/* Call to Action Section */}
-      <section className="text-center space-y-6 py-12 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-950 dark:to-purple-950 rounded-2xl">
+      <section className="text-center space-y-6 py-12 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-950 dark:to-purple-950 rounded-2xl p-8">
         <h2 className="text-3xl font-bold">Ready to Dive Deeper?</h2>
         <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-          Reach out to me on GitHub, LinkedIn, or email me direct!pn
+          Reach out to me on GitHub, LinkedIn, or email me direct!
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Link 
-            href="/about/#socials-section" 
+          <Link
+            href="/about/#socials-section"
             className="btn-primary"
           >
             Get in Touch
           </Link>
-          <Link 
-            href="#blog-section" 
+          <Link
+            href="#blog-section"
             className="btn-secondary"
           >
             Explore More

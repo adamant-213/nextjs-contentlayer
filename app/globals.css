@@ -4,14 +4,13 @@
 
 /* Common container for each project section */
 .project-container {
-  @apply border rounded-lg overflow-hidden; /* Lighter border */
+  @apply border rounded-lg overflow-hidden;
+  /* Lighter border */
 }
 
 /* Common header row styling */
 .project-header {
-  @apply 
-    grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 
-    p-0 font-semibold border-b;
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-0 font-semibold border-b;
 }
 
 /* Common cell styling for header cells */
@@ -21,71 +20,66 @@
 
 /* Common content row styling */
 .project-row {
-  @apply
-    grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 
-    p-0 hover:bg-opacity-40;
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-0 hover:bg-opacity-40;
 }
 
 /* Common cell styling for content cells */
 .project-cell {
-  @apply border p-4; 
+  @apply border p-4;
 }
 
 .project-button {
-    @apply inline-block font-semibold px-4 py-2 rounded shadow-md;
+  @apply inline-block font-semibold px-4 py-2 rounded shadow-md;
+}
+
+.project-cell-center {
+  @apply flex justify-center items-center;
+}
+
+@layer components {
+
+  .btn-primary {
+    @apply inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 
+           text-white px-6 py-3 rounded-lg font-medium transition-colors 
+           w-auto self-center;
   }
   
-  .project-cell-center {
-    @apply flex justify-center items-center;
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 border border-slate-300 dark:border-slate-700 
+           hover:bg-slate-50 dark:hover:bg-slate-800 px-6 py-3 rounded-lg font-medium 
+           transition-colors w-auto self-center;
   }
   
-  @layer components {
-    /* Buttons */
-    .btn-primary {
-      @apply inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 
-             text-white px-6 py-3 rounded-lg font-medium transition-colors;
-    }
-  
-    .btn-secondary {
-      @apply inline-flex items-center gap-2 border border-slate-300 dark:border-slate-700 
-             hover:bg-slate-50 dark:hover:bg-slate-800 
-             px-6 py-3 rounded-lg font-medium transition-colors;
-    }
-  
-    .btn-dark {
-      @apply inline-flex items-center gap-2 bg-slate-900 dark:bg-slate-100 
-             text-white dark:text-slate-900 
-             hover:bg-slate-800 dark:hover:bg-slate-200 
-             px-6 py-3 rounded-lg font-medium transition-colors;
-    }
-  
-    /* Section Headings */
-    .section-title {
-      @apply text-3xl font-bold text-center;
-    }
-  
-    /* Card container (for blog/article tiles) */
-    .card {
-      @apply p-6 rounded-lg border border-slate-200 dark:border-slate-800 
-             transition-all duration-300 hover:border-blue-300 dark:hover:border-blue-700 
-             hover:shadow-lg;
-    }
-  
-    /* Feature image wrapper */
-    .feature-image {
-      @apply relative overflow-hidden rounded-lg shadow-lg 
-             group-hover:shadow-xl transition-shadow;
-    }
-  
-    /* Feature image overlay */
-    .feature-overlay {
-      @apply absolute inset-0 bg-gradient-to-t from-black/60 to-transparent 
-             opacity-0 group-hover:opacity-100 
-             transition-opacity duration-300;
-    }
-  
-    /* Paragraph text */
-    .paragraph {
-      @apply text-slate-600 dark:text-slate-400 leading-relaxed;
-    }
+  .btn-dark {
+    @apply inline-flex items-center gap-2 bg-slate-900 dark:bg-slate-100 
+           text-white dark:text-slate-900 hover:bg-slate-800 dark:hover:bg-slate-200 
+           px-6 py-3 rounded-lg font-medium transition-colors 
+           w-auto self-center;
   }
+  
+
+  /* Section Headings */
+  .section-title {
+    @apply text-3xl font-bold text-center;
+  }
+
+  /* Card container (for blog/article tiles) */
+  .card {
+    @apply p-6 rounded-lg border border-slate-200 dark:border-slate-800 transition-all duration-300 hover:border-blue-300 dark:hover:border-blue-700 hover:shadow-lg;
+  }
+
+  /* Feature image wrapper */
+  .feature-image {
+    @apply relative overflow-hidden rounded-lg shadow-lg group-hover:shadow-xl transition-shadow;
+  }
+
+  /* Feature image overlay */
+  .feature-overlay {
+    @apply absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300;
+  }
+
+  /* Paragraph text */
+  .paragraph {
+    @apply text-slate-600 dark:text-slate-400 leading-relaxed;
+  }
+}
