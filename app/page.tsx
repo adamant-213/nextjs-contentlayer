@@ -6,9 +6,9 @@ export default function Home() {
   return (
     <div className="space-y-12">
       {/* Hero Section */}
-      <section className="text-center space-y-8 py-8">
-        <div className="space-y-6">
-          <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
+      <section className="text-center py-8">
+        <div className="space-y-8">
+          <h1 className="header-style">
             Welcome to My Portfolio
           </h1>
 
@@ -46,14 +46,13 @@ export default function Home() {
             </div>
 
             {/* Paragraph */}
-            <div className="text-left md:text-left space-y-4 max-w-3xl">
+            <div className="text-left md:text-left py-2 max-w-3xl">
             <p className="paragraph py-12">
-            &quot;I&rsquo;m Adam Berndt, a software and systems engineer with a background in networking, IT, and software development.
+            I&rsquo;m Adam Berndt, a software and systems engineer with a background in networking, IT, and software development.
              I&rsquo;ve worked on automation, enterprise systems, and analytics in manufacturing, with experience in C#, Java, and Bash.
               While much of my recent work is proprietary, this site showcases my personal and academic projects, 
-              from full-stack web apps to Linux automation, reflecting my focus on solving practical problems with technology.&quot;
+              from full-stack web apps to Linux automation, reflecting my focus on solving practical problems with technology.
             </p>
-
             </div>
           </div>
         </div>
@@ -69,10 +68,8 @@ export default function Home() {
         </div>
       </section>
 
-
-
       {/* Exposition Section */}
-      <section className="max-w-4xl mx-auto space-y-8">
+      <section className="max-w-4xl mx-auto">
         <div className="prose dark:prose-invert prose-lg max-w-none">
           <h2 className="section-title mb-8">What You Will Find Here</h2>
           <div className="grid md:grid-cols-2 gap-8">

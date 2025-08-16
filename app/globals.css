@@ -36,6 +36,10 @@
   @apply flex justify-center items-center;
 }
 
+.header-style {
+  @apply text-5xl md:text-7xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent
+}
+
 @layer components {
 
   .btn-primary {
