@@ -40,6 +40,15 @@
   @apply text-5xl md:text-7xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent
 }
 
+.section-spacing {
+  @apply space-y-8;
+}
+
+.border-style
+{
+  @apply border border-slate-300 dark:border-slate-700;
+}
+
 @layer components {
 
   .btn-primary {

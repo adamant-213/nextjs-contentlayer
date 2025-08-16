@@ -6,11 +6,9 @@ export default function Home() {
   return (
     <div className="space-y-12">
       {/* Hero Section */}
-      <section className="text-center py-8">
-        <div className="space-y-8">
-          <h1 className="header-style">
-            Welcome to My Portfolio
-          </h1>
+      <section className="text-center section-spacing py-8">
+      <h1 className="header-style">Welcome to My Portfolio</h1>
+        <div className="space-y-8 p-8 border-style">
 
           {/* Profile + Intro */}
           <div className="flex flex-col md:flex-row items-center md:items-start md:justify-center gap-8 max-w-5xl mx-auto">
@@ -19,7 +17,7 @@ export default function Home() {
               <img
                 src="profile.jpg"
                 alt="Profile Icon"
-                className="w-40 h-40 rounded-full object-cover border-4 border-slate-300 dark:border-slate-700"
+                className="w-40 h-40 rounded-full object-cover border-style"
               />
               <p>
                 Adam Berndt
@@ -47,7 +45,7 @@ export default function Home() {
 
             {/* Paragraph */}
             <div className="text-left md:text-left py-2 max-w-3xl">
-            <p className="paragraph py-12">
+            <p className="paragraph">
             I&rsquo;m Adam Berndt, a software and systems engineer with a background in networking, IT, and software development.
              I&rsquo;ve worked on automation, enterprise systems, and analytics in manufacturing, with experience in C#, Java, and Bash.
               While much of my recent work is proprietary, this site showcases my personal and academic projects, 
@@ -69,7 +67,7 @@ export default function Home() {
       </section>
 
       {/* Exposition Section */}
-      <section className="max-w-4xl mx-auto">
+      <section className="max-w-4xl mx-auto section-spacing">
         <div className="prose dark:prose-invert prose-lg max-w-none">
           <h2 className="section-title mb-8">What You Will Find Here</h2>
           <div className="grid md:grid-cols-2 gap-8">
@@ -83,7 +81,6 @@ export default function Home() {
               <Link href="/about/#info-section" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-medium">
                 Browse About Me →
               </Link>
-
             </div>
 
             <div className="space-y-4">
@@ -120,7 +117,7 @@ export default function Home() {
       </section>
 
       {/* Featured Images Section */}
-      <section className="max-w-6xl mx-auto space-y-8">
+      <section className="max-w-6xl mx-auto section-spacing">
         <h2 className="text-3xl font-bold text-center">Featured Work</h2>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -187,11 +184,10 @@ export default function Home() {
       </section>
 
       {/* Documents & Resources Section */}
-      <section className="max-w-4xl mx-auto space-y-8">
+      <section className="max-w-4xl mx-auto section-spacing">
         <h2 className="text-3xl font-bold text-center">Resources & Documents</h2>
-
         <div className="grid md:grid-cols-2 gap-8">
-          <div className="p-6 rounded-lg border border-slate-200 dark:border-slate-800 hover:border-blue-300 dark:hover:border-blue-700 transition-colors">
+          <div className="p-4 rounded-lg border border-slate-200 dark:border-slate-800 hover:border-blue-300 dark:hover:border-blue-700 transition-colors">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-10 h-10 bg-blue-100 dark:bg-blue-900 rounded-lg flex items-center justify-center">
                 <svg className="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -228,7 +224,7 @@ export default function Home() {
       </section>
 
       {/* Blog Posts Section */}
-      <section id="blog-section" className="space-y-8">
+      <section id="blog-section" className="section-spacing">
         <div className="text-center space-y-4">
           <h2 className="text-3xl font-bold">Latest Articles</h2>
           <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
@@ -282,7 +278,7 @@ export default function Home() {
       </section>
 
       {/* Call to Action Section */}
-      <section className="text-center space-y-6 py-12 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-950 dark:to-purple-950 rounded-2xl p-8">
+      <section className="text-center section-spacing bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-950 dark:to-purple-950 rounded-2xl p-8">
         <h2 className="text-3xl font-bold">Ready to Dive Deeper?</h2>
         <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
           Reach out to me on GitHub, LinkedIn, or email me direct!
