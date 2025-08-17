@@ -2,89 +2,93 @@
 title: About
 description: Learn more about me and the purpose of this website.
 ---
-<section id="top"></section>
-## About Me
 
-Hello! I&apos;m a developer with a passion for building thoughtful, practical software solutions. Over the years, I’ve worked on a wide range of projects using languages like **C#**, **Python**, and **Java**, and I enjoy tackling problems that require both creativity and technical skill.
+<section id="top" className="section-spacing max-w-5xl mx-auto">
 
-This website serves as a central hub for my work — a place where I can document, reflect, and share projects and ideas that matter to me.
-
----
-
-## Why This Site Exists
-
-I created this site to:
-
-- Showcase projects I’ve built and what I’ve learned from them
-- Share insights and technical notes that might help others
-- Maintain a clean record of my professional and personal development
-
-Whether you’re here to explore my work, learn something new, or connect professionally — welcome!
-
----
-
-<section id="socials-section">
-## Let's Connect
-
-Feel free to reach out if you’d like to collaborate or chat about development, design, or anything tech-related.
-
-- GitHub: [github.com/adamant-213](https://github.com/adamant-213)
-- LinkedIn: [https://www.linkedin.com/in/adam-berndt-6778a4211](https://www.linkedin.com/in/adam-berndt-6778a4211)
-- Email: adambern19@gmail.com
-</section>
----
-<section id="info-section" className="space-y-8">
-  ## Featured Documents
-
-  <div className="mb-4">
-    <p className="text-gray-700 dark:text-gray-300">
-      Below are my Resume and Transcript 
+  {/* About Me */}
+  <div className="space-y-4">
+    <h2 className="section-title">About Me</h2>
+    <p className="doc-text">
+      Hello! I&apos;m a developer with a passion for building thoughtful, practical software solutions. 
+      Over the years, I’ve worked on a wide range of projects using languages like 
+      <strong> C#</strong>, <strong>Python</strong>, and <strong>Java</strong>, 
+      and I enjoy tackling problems that require both creativity and technical skill.
+    </p>
+    <p className="doc-text">
+      This website serves as a central hub for my work — a place where I can document, reflect, 
+      and share projects and ideas that matter to me.
     </p>
   </div>
+
+  <hr className="border-style" />
+
+  {/* Why This Site Exists */}
+  <div className="space-y-4">
+    <h2 className="section-title">Why This Site Exists</h2>
+    <ul className="list-disc list-inside text-slate-600 dark:text-slate-400 leading-relaxed space-y-2">
+      <li>Showcase projects I’ve built and what I’ve learned from them</li>
+      <li>Share insights and technical notes that might help others</li>
+      <li>Maintain a clean record of my professional and personal development</li>
+    </ul>
+    <p className="doc-text">
+      Whether you’re here to explore my work, learn something new, or connect professionally — welcome!
+    </p>
+  </div>
+
+  <hr className="border-style" />
+
+  {/* Socials */}
+  <section id="socials-section" className="space-y-4 text-center">
+    <h2 className="section-title">Let&apos;s Connect</h2>
+    <p className="doc-text">Feel free to reach out if you’d like to collaborate or chat about development, design, or anything tech-related.</p>
+    <div className="flex flex-col sm:flex-row justify-center gap-4">
+      <a href="https://www.linkedin.com/in/adam-berndt-6778a4211" className="btn-primary">LinkedIn</a>
+      <a href="https://github.com/adamant-213" className="btn-secondary">GitHub</a>
+      <a href="mailto:adambern19@gmail.com" className="btn-dark">Email</a>
+    </div>
+  </section>
+
+  <hr className="border-style" />
+
+  {/* Featured Documents */}
+  <section id="info-section" className="space-y-6">
+    <h2 className="section-title">Featured Documents</h2>
+    <p className="doc-text text-center">Below are my Resume and Transcript.</p>
+
+    {/* Resume */}
+    <div className="doc-card border-style">
+      <div className="doc-preview">
+        <iframe
+          src="https://drive.google.com/file/d/1iuWSJQvUVEnHQ5ckmoiY7Er3Lym4-6hg/preview"
+          className="doc-iframe"
+          allow="autoplay"
+        />
+      </div>
+      <div className="doc-content">
+        <h4 className="doc-title">Resume</h4>
+        <p className="doc-text">
+          Highlighting my prior work experience, this resume aims to capture the wide breadth of my skillset.
+        </p>
+      </div>
+    </div>
+
+    {/* Transcript */}
+    <div className="doc-card border-style">
+      <div className="doc-preview">
+        <iframe
+          src="https://drive.google.com/file/d/1gCtEJSBFQAflV-5Hs26BwFZhVToW2ByV/preview"
+          className="doc-iframe"
+          allow="autoplay"
+        />
+      </div>
+      <div className="doc-content">
+        <h4 className="doc-title">Academic Transcript</h4>
+        <p className="doc-text">
+          This is my academic transcript from Purdue. While I did graduate May 2023, I went back to college 
+          to explore electrical engineering for a short time after.
+        </p>
+      </div>
+    </div>
+  </section>
+
 </section>
-
-<div className="w-full border-style overflow-x-auto p-4">
-  <table className="w-full border-collapse">
-    <tbody>
-      <tr className="flex flex-col lg:table-row">
-        {/* Preview */}
-        <td className="p-2 align-top w-full lg:w-2/3">
-          <div className="relative w-full" style={{ paddingTop: "56.25%" }}>
-            <iframe
-              src="https://drive.google.com/file/d/1iuWSJQvUVEnHQ5ckmoiY7Er3Lym4-6hg/preview"
-              className="absolute top-0 left-0 w-full h-full border-0"
-              allow="autoplay"
-            />
-          </div>
-        </td>
-        {/* Description */}
-        <td className="p-4 align-top w-full lg:w-1/3">
-          <h4 className="text-lg font-semibold mb-2">Resume</h4>
-          <p className="text-gray-700 dark:text-gray-300">
-            Highlighting my prior work experience, this resume aims to capture the wide breadth of my skillset
-          </p>
-        </td>
-      </tr>
-      <tr className="flex flex-col lg:table-row">
-        {/* Preview */}
-        <td className="p-2 align-top w-full lg:w-2/3">
-          <div className="relative w-full" style={{ paddingTop: "56.25%" }}>
-            <iframe
-              src="https://drive.google.com/file/d/1gCtEJSBFQAflV-5Hs26BwFZhVToW2ByV/preview"
-              className="absolute top-0 left-0 w-full h-full border-0"
-              allow="autoplay"
-            />
-          </div>
-        </td>
-        {/* Description */}
-        <td className="p-4 align-top w-full lg:w-1/3">
-          <h4 className="text-lg font-semibold mb-2">Academic Transcript</h4>
-          <p className="text-gray-700 dark:text-gray-300">
-            This is my academic transcript from Purdue. While I did graduate May 2023, I went back to college to explore electrical engineering for a short time after.
-          </p>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-

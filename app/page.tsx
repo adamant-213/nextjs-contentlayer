@@ -45,7 +45,7 @@ export default function Home() {
 
             {/* Paragraph */}
             <div className="text-left md:text-left py-2 max-w-3xl">
-            <p className="paragraph">
+            <p className="doc-text">
             I&rsquo;m Adam Berndt, a software and systems engineer with a background in networking, IT, and software development.
              I&rsquo;ve worked on automation, enterprise systems, and analytics in manufacturing, with experience in C#, Java, and Bash.
               While much of my recent work is proprietary, this site showcases my personal and academic projects, 
@@ -75,7 +75,7 @@ export default function Home() {
               <h3 className="text-xl font-semibold text-blue-600 dark:text-blue-400">
                 🚀 Resume & Transcripts
               </h3>
-              <p className="paragraph">
+              <p className="doc-text">
                 This section introduces me and also offers previews of my resume and transcript
               </p>
               <Link href="/about/#info-section" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-medium">
@@ -87,7 +87,7 @@ export default function Home() {
               <h3 className="text-xl font-semibold text-purple-600 dark:text-purple-400">
                 🎨 Documentation
               </h3>
-              <p className="paragraph">
+              <p className="doc-text">
                 This section shows documentation I have written throughout my academic career
               </p>
               <Link href="/documentation" className="text-purple-600 hover:text-purple-700 dark:text-purple-400 dark:hover:text-purple-300 font-medium">
@@ -99,7 +99,7 @@ export default function Home() {
               <h3 className="text-xl font-semibold text-green-600 dark:text-green-400">
                 🔧 Photo Dumps
               </h3>
-              <p className="paragraph">
+              <p className="doc-text">
                 TEST3
               </p>
             </div>
@@ -108,7 +108,7 @@ export default function Home() {
               <h3 className="text-xl font-semibold text-orange-600 dark:text-orange-400">
                 💡 Employment Experience
               </h3>
-              <p className="paragraph">
+              <p className="doc-text">
                 TEST4
               </p>
             </div>
@@ -241,7 +241,7 @@ export default function Home() {
                     {post.title}
                   </h3>
                   {post.description && (
-                    <p className="paragraph mb-4">
+                    <p className="doc-text mb-4">
                       {post.description}
                     </p>
                   )}
