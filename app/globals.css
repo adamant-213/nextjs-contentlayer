@@ -2,39 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Common container for each project section */
-.project-container {
-  @apply border rounded-lg overflow-hidden;
-  /* Lighter border */
-}
-
-/* Common header row styling */
-.project-header {
-  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-0 font-semibold border-b;
-}
-
-/* Common cell styling for header cells */
-.project-header-cell {
-  @apply border border-gray-300 p-2;
-}
-
-/* Common content row styling */
-.project-row {
-  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-0 hover:bg-opacity-40;
-}
-
-/* Common cell styling for content cells */
-.project-cell {
-  @apply border p-4;
-}
-
-.project-button {
-  @apply inline-block font-semibold px-4 py-2 rounded shadow-md;
-}
-
-.project-cell-center {
-  @apply flex justify-center items-center;
-}
 
 .header-style {
   @apply text-5xl md:text-7xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent
@@ -118,13 +85,11 @@
 
   /* Card container (for blog/article tiles) */
   .card {
-    @apply p-6 rounded-lg border border-slate-200 dark:border-slate-800 transition-all duration-300 hover:border-blue-300 dark:hover:border-blue-700 hover:shadow-lg;
+    @apply p-6 rounded-lg border border-slate-300 dark:border-slate-700 transition-all duration-300 hover:border-blue-300 dark:hover:border-blue-700 hover:shadow-lg;
   }
 
   /* Feature image wrapper */
-  .feature-image {
-    @apply relative overflow-hidden rounded-lg shadow-lg group-hover:shadow-xl transition-shadow;
-  }
+  .feature-image { @apply relative overflow-hidden rounded-lg shadow-lg group-hover:shadow-xl transition-shadow; }
 
   /* Feature image overlay */
   .feature-overlay {
@@ -145,3 +110,32 @@
 .bg-overlay {
   @apply bg-slate-100 dark:bg-slate-900 bg-opacity-95;
 }
+
+.project-container { @apply border rounded-lg overflow-hidden; }
+.project-header { @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-0 font-semibold border-b;}
+.project-header-cell { @apply border border-gray-300 p-2;}
+.project-row { @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-0 hover:bg-opacity-40;}
+.project-cell { @apply border p-4; }
+.project-button { @apply inline-block font-semibold px-4 py-2 rounded shadow-md; }
+.project-cell-center { @apply flex justify-center items-center; }
+
+.lang-c .project-header { @apply bg-purple-600 text-white;}
+.lang-c .project-row:hover { @apply bg-purple-400;}
+.lang-c .project-button { @apply bg-purple-600 hover:bg-purple-700 text-white;}
+.lang-c .project-button:hover { @apply transition-colors;}
+
+.lang-python .project-header { @apply bg-green-600 text-white; }
+.lang-python .project-row:hover { @apply bg-green-400; }
+.lang-python .project-button { @apply bg-green-600 hover:bg-green-700 text-white; }
+
+.lang-java .project-header { @apply bg-orange-600 text-white; }
+.lang-java .project-row:hover { @apply bg-orange-400; }
+.lang-java .project-button { @apply bg-orange-600 hover:bg-orange-700 text-white; }
+
+.lang-csharp .project-header { @apply bg-blue-600 text-white; }
+.lang-csharp .project-row:hover { @apply bg-blue-400; }
+.lang-csharp .project-button { @apply bg-blue-600 hover:bg-blue-700 text-white; }
+
+.lang-misc .project-header { @apply bg-red-600 text-white; }
+.lang-misc .project-row:hover { @apply bg-red-400; }
+.lang-misc .project-button { @apply bg-red-600 hover:bg-red-700 text-white; }
