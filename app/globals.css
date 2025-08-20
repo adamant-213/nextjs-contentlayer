@@ -108,7 +108,11 @@
 }
 
 .bg-overlay {
-  @apply bg-slate-100 dark:bg-slate-900 bg-opacity-95;
+  @apply bg-slate-100 bg-opacity-90;
+}
+
+.dark .bg-overlay {
+  @apply bg-slate-900 bg-opacity-90;
 }
 
 .project-container { @apply border rounded-lg overflow-hidden; }
