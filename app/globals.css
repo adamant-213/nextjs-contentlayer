@@ -32,7 +32,7 @@
   
   .btn-dark {
     @apply inline-flex items-center gap-2 bg-slate-900 dark:bg-slate-100 
-           text-white dark:text-slate-900 hover:bg-slate-800 dark:hover:bg-slate-200 
+           text-white dark:text-slate-900 hover:bg-slate-700 dark:hover:bg-slate-300 
            px-6 py-3 rounded-lg font-medium transition-colors 
            w-auto self-center;
   }
@@ -80,7 +80,7 @@
 }
 
 .doc-text {
-  @apply text-slate-600 dark:text-slate-400 leading-relaxed;
+  @apply px-4 text-slate-700 dark:text-slate-300 leading-relaxed;
 }
 
   /* Card container (for blog/article tiles) */

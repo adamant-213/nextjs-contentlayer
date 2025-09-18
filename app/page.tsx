@@ -100,7 +100,7 @@ export default function Home() {
                 🔧 Photo Dumps
               </h3>
               <p className="doc-text">
-                TEST3
+                Still under development
               </p>
             </div>
 
@@ -109,7 +109,7 @@ export default function Home() {
                 💡 Employment Experience
               </h3>
               <p className="doc-text">
-                TEST4
+                Still under development
               </p>
             </div>
           </div>
@@ -135,7 +135,7 @@ export default function Home() {
               <div className="feature-overlay">
                 <div className="absolute bottom-4 left-4 text-white">
                   <h3 className="font-semibold">Web Development</h3>
-                  <p className="text-sm opacity-90">TEST5</p>
+                  <p className="text-sm opacity-90">WIP</p>
                 </div>
               </div>
             </div>
@@ -154,8 +154,8 @@ export default function Home() {
               />
               <div className="feature-overlay">
                 <div className="absolute bottom-4 left-4 text-white">
-                  <h3 className="font-semibold">Design Systems</h3>
-                  <p className="text-sm opacity-90">TEST6</p>
+                  <h3 className="font-semibold">System Design</h3>
+                  <p className="text-sm opacity-90">WIP</p>
                 </div>
               </div>
             </div>
@@ -174,8 +174,8 @@ export default function Home() {
               />
               <div className="feature-overlay">
                 <div className="absolute bottom-4 left-4 text-white">
-                  <h3 className="font-semibold">Performance</h3>
-                  <p className="text-sm opacity-90">TEST7</p>
+                  <h3 className="font-semibold">Scripting</h3>
+                  <p className="text-sm opacity-90">WIP</p>
                 </div>
               </div>
             </div>
@@ -187,7 +187,7 @@ export default function Home() {
       <section className="max-w-4xl mx-auto section-spacing">
         <h2 className="text-3xl font-bold text-center">Resources & Documents</h2>
         <div className="grid md:grid-cols-2 gap-8">
-          <div className="p-4 rounded-lg border border-slate-200 dark:border-slate-800 hover:border-blue-300 dark:hover:border-blue-700 transition-colors">
+          <div className="p-8 rounded-lg border border-style hover:border-blue-300 dark:hover:border-blue-700 transition-colors">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-10 h-10 bg-blue-100 dark:bg-blue-900 rounded-lg flex items-center justify-center">
                 <svg className="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -196,7 +196,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-semibold">Technical Guides</h3>
             </div>
-            <p className="text-slate-600 dark:text-slate-400 mb-4">
+            <p className="doc-text mb-4">
               This link will take you to my documentation page where I have posted guides written throughout my academic career
             </p>
             <Link href="/documentation/#network-section" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-medium">
@@ -204,7 +204,7 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="p-8 rounded-lg border border-slate-200 dark:border-slate-800 hover:border-purple-300 dark:hover:border-purple-700 transition-colors">
+          <div className="p-8 rounded-lg border border-style hover:border-purple-300 dark:hover:border-purple-700 transition-colors">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-10 h-10 bg-purple-100 dark:bg-purple-900 rounded-lg flex items-center justify-center">
                 <svg className="w-5 h-5 text-purple-600 dark:text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -213,7 +213,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-semibold">Code Projects</h3>
             </div>
-            <p className="text-slate-600 dark:text-slate-400 mb-4">
+            <p className="doc-text mb-4">
               This link will take you to my code page where I have posted various projects I&apos;ve worked on over the years
             </p>
             <Link href="/codelinks" className="text-purple-600 hover:text-purple-700 dark:text-purple-400 dark:hover:text-purple-300 font-medium">
@@ -227,7 +227,7 @@ export default function Home() {
       <section id="blog-section" className="section-spacing">
         <div className="text-center space-y-4">
           <h2 className="text-3xl font-bold">Latest Articles</h2>
-          <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+          <p className="text-lg doc-text max-w-2xl mx-auto">
             Most recent articles will be posted here
           </p>
         </div>
